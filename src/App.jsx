@@ -31,7 +31,7 @@ function App() {
             placeholder='Avengers, Pulp Fiction, Breaking Bad...'
             spellcheck="false"
           />
-          <button type='submit'><img className='img-lupa' src="../public/lupa.png" alt="buscar película" /></button>
+          <button type='submit'><img className='img-lupa' src="./assets/lupa.png" alt="buscar película" /></button>
         </form>
         {error && <p style={{ color: 'red' }}>{error}</p>}
 
