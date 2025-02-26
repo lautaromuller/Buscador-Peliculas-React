@@ -29,6 +29,7 @@ function App() {
             value={search}
             name='query'
             placeholder='Avengers, Pulp Fiction, Breaking Bad...'
+            spellcheck="false"
           />
           <button type='submit'><img className='img-lupa' src="../public/lupa.png" alt="buscar película" /></button>
         </form>
