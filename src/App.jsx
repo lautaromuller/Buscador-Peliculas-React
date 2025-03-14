@@ -2,7 +2,7 @@ import './App.css'
 import { useMovies } from './hooks/useMovies'
 import { Movies } from './components/Movies'
 import { useSearch } from './hooks/useSearch'
-
+import lupa from './assets/lupa.png'
 
 function App() {
   const { search, setSearch, error } = useSearch()
@@ -31,7 +31,7 @@ function App() {
             placeholder='Avengers, Pulp Fiction, Breaking Bad...'
             spellcheck="false"
           />
-          <button type='submit'><img className='img-lupa' src="./assets/lupa.png" alt="buscar" /></button>
+          <button type='submit'><img className='img-lupa' src={lupa} alt="buscar" /></button>
         </form>
         {error && <p style={{ color: 'red' }}>{error}</p>}
 
